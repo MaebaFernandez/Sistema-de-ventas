@@ -1,0 +1,4 @@
+export class TipoPago {
+  TipoPagoId: number;
+  TpoPago: number;
+}

@@ -1,0 +1,14 @@
+<h3>{{leyenda}}</h3>
+<div class="input-group">
+    <span class="input-group-btn">
+       <button class="btn btn-primary" (click)="sumarProgreso(+5)" type="button">
+         <i class="fa fa-plus-square-o fa-1x" aria-hidden="true"></i>
+       </button>
+    </span>
+      <input type="number"  class="form-control" #txtProgress name="progreso" [(ngModel)]="progreso" (ngModelChange)="onChanges($event)"  min="1" max="100">
+    <span class="input-group-btn">
+      <button class="btn btn-primary" (click)="sumarProgreso(-5)" type="button">
+        <i class="fa fa-minus-square-o fa-1x" aria-hidden="true"></i>
+      </button>
+    </span>
+</div>
